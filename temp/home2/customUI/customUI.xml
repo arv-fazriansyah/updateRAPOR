@@ -1,0 +1,208 @@
+<customUI xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+  <commands>
+    <command idMso="ApplicationOptionsDialog" enabled="false" />
+    <command idMso="TabInfo" enabled="false" />
+    <command idMso="TabOfficeStart" enabled="false" />
+    <command idMso="TabRecent" enabled="false" />
+    <command idMso="TabSave" enabled="false" />
+    <command idMso="TabPrint" enabled="true" />
+    <command idMso="TabShare" enabled="false" />
+    <command idMso="Publish2Tab" enabled="false"/>
+    <command idMso="TabPublish" enabled="false"/>
+    <command idMso="TabHelp" enabled="false"/>
+    <command idMso="TabOfficeFeedback" enabled="false"/>
+    <command idMso="FileSave" enabled="true"/>
+    <command idMso="HistoryTab" enabled="false"/>
+    <command idMso="FileClose" enabled="false"/>
+    <command idMso="FileExit" enabled="true"/>
+  </commands>
+
+<ribbon startFromScratch="true">
+    <tabs>
+      <tab idMso="TabHome" visible="true" />
+      <tab idMso="TabView" visible="true" />
+      <tab idMso="TabReview" visible="true" />
+      <tab idMso="TabData" visible="true" />
+      <tab idMso="TabAutomate" visible="true" />
+      <tab idMso="TabInsert" visible="true" />
+      <tab idMso="TabPageLayoutExcel" visible="true" />
+      <tab idMso="TabFormulas" visible="true" />
+      <tab idMso="TabDeveloper" visible="true" />
+  <tab id="TabNew1" label="Beranda">
+    <group id="MyGroup1" label="FRONT">
+      <button id="Sekolah1" image="edco" label="HOME" size="large" onAction="BukaSheet4" />
+    </group>
+
+    <group id="MyGroup11" label="   DATA POKOK   ">
+	<button id="Sheet45" image="sekolah" label=" Profil Sekolah " size="large" onAction="BukaSheet45"/>
+        <separator  id="Separator11" />
+	<button id="Sheet5" image="siswa" label="Identitas Siswa" size="large" onAction="BukaSheet5"/>
+        <separator  id="Separator12" />
+	<button id="Sheet56" imageMso="CreateForm" label="Buku Induk" size="large" onAction="BukaSheet56"/>
+        <separator  id="Separator13" />
+	<button id="Sheet11" image="bobot" label="Mapel dan Bobot" size="large" onAction="BukaSheet11"/>
+    </group>
+
+    <group id="MyGroup111" label="TUJUAN PEMBELAJARAN">
+	<button id="Sheet6" image="tpmapel" label="Mata Pelajaran" size="large" onAction="BukaSheet6"/>
+        <separator  id="Separator14" />
+	<button id="Sheet9" image="tpagama" label="Pend. Agama Budi Pekerti" size="large" onAction="BukaSheet9"/>
+    </group>
+
+    <group id="MyGroup1111" label="SIMPAN">
+      <button idMso="FileSave" image="edco" label="Simpan Pekerjaan" size="large" onAction="Simpan" />
+    </group>
+</tab>
+
+<tab id="TabNew2" label="Input Nilai">
+    <group id="MyGroup2" label="FRONT">
+      <button id="Sekolah2" image="edco" label="HOME" size="large" onAction="BukaSheet4" />
+    </group>
+
+    <group id="MyGroup22" label=" P A B P ">
+      <button id="sheet26" label="Islam" image="islam" size="normal" onAction="Bukasheet26" />
+	<button id="sheet27" label="Kristen" image="kristen" size="normal" onAction="Bukasheet27" />
+      <button id="sheet28" label="Katolik" image="katolik" size="normal" onAction="Bukasheet28" />
+        <separator  id="Separator221" />
+      <button id="sheet13" label="Hindu" image="hindu" size="normal" onAction="Bukasheet13" />
+      <button id="sheet29" label="Budha" image="buddha" onAction="Bukasheet29" />
+      <button id="sheet30" label="Konghucu" image="konghuchu" size="normal" onAction="Bukasheet30" />
+        <separator  id="Separator222" />
+      <button id="sheet53" label="Aliran Kepercayaan" image="kepercayaan" size="normal" onAction="Bukasheet53" />
+    </group>
+
+    <group id="MyGroup222" label="MATA PELAJARAN">      
+	<button id="Sheet66" image="pancasila" label="Pend. Pancasila" size="normal" onAction="BukaSheet66"/>
+	<button id="Sheet15" image="indo" label="Bhs. Indonesia" size="normal" onAction="BukaSheet15"/>
+	<button id="Sheet17" image="mat" label="Matematika" size="normal" onAction="BukaSheet17"/>
+	  <separator  id="Separator2221" />
+	<button id="Sheet19" image="musik" label="Seni Musik" size="normal" onAction="BukaSheet19"/>
+	<button id="Sheet20" image="tari" label="Seni Tari" size="normal" onAction="BukaSheet20"/>
+	<button id="Sheet21" image="rupa" label="Seni Rupa" size="normal" onAction="BukaSheet21"/>
+        <separator  id="Separator2222" />
+	<button id="Sheet22" image="teater" label="Seni Teater" size="normal" onAction="BukaSheet22"/>
+        <separator  id="Separator2223" />
+	<button id="Sheet23" image="pjok" label="PJOK" size="normal" onAction="BukaSheet23"/>
+	<button id="Sheet24" image="inggris" label="Bhs. Inggris" size="normal" onAction="BukaSheet24"/>
+    </group>
+
+    <group id="MyGroup2222" label="MUATAN LOKAL">  
+	<button id="Sheet31" image="mulok1" label="Mulok 1" size="normal" onAction="BukaSheet31"/>
+	<button id="Sheet32" image="mulok2" label="Mulok 2" size="normal" onAction="BukaSheet32"/>
+	<button id="Sheet33" image="mulok3" label="Mulok 3" size="normal" onAction="BukaSheet33"/>
+        <separator  id="Separator22221" />
+	<button id="Sheet65" image="mulok4" label="Mulok 4" size="normal" onAction="BukaSheet65"/>
+	<button id="Sheet67" image="mulok5" label="Mulok 5" size="normal" onAction="BukaSheet67"/>
+    </group>
+
+    <group id="MyGroup22222" label="SIMPAN">
+      <button idMso="FileSave" image="edco" label="Simpan Pekerjaan" size="large" onAction="Simpan" />
+    </group>
+</tab>
+
+<tab id="TabNew3" label="Catatan Peserta Didik">
+    <group id="MyGroup3" label="FRONT">
+      <button id="Sekolah3" image="edco" label="HOME" size="large" onAction="BukaSheet4" />
+    </group>
+
+    <group id="MyGroup33" label="CATATAN PESERA DIDIK">
+      <button id="Sheet37" image="pramuka" label="Ekstrakurikuler" size="large" onAction="BukaSheet37"/>
+        <separator  id="Separator331" />
+      <button id="Sheet39" imageMso="WordArtEditTextClassic" label="Catatan Guru" size="large" onAction="BukaSheet39"/>
+        <separator  id="Separator332" />
+      <button id="Sheet38" image="absen" label="Absen" size="large" onAction="BukaSheet38"/>
+        <separator  id="Separator333" />
+      <button id="Sheet42" image="tangga" label="Ket. Naik/Lulus" size="large" onAction="BukaSheet42"/>
+    </group>
+
+    <group id="MyGroup333" label="SIMPAN">
+      <button idMso="FileSave" image="edco" label="Simpan Pekerjaan" size="large" onAction="Simpan" />
+    </group>
+</tab>
+
+<tab id="TabNew4" label="QR Code">
+    <group id="MyGroup4" label="FRONT">
+     <button id="Sekolah4" image="edco" label="HOME" size="large" onAction="BukaSheet4" />
+    </group>
+
+    <group id="MyGroup44" label="QR CODE">
+     <button id="Sheet18" image="code" label="QR Code Peserta Didik" size="large" onAction="BukaSheet18" />
+    </group>
+    
+    <group id="MyGroup444" label="SIMPAN">
+     <button idMso="FileSave" image="edco" label="Simpan Pekerjaan" size="large" onAction="Simpan" />
+    </group>
+</tab>
+
+<tab id="TabNew6" label="Rapor Projek">
+    <group id="MyGroup6" label="FRONT">
+      <button id="Sekolah6" image="edco" label="HOME" size="large" onAction="BukaSheet4" />
+    </group>
+
+    <group id="MyGroup66" label="DIMENSI">
+	<button id="Sheet2" image="rekap" label="Dimensi P5" size="large" onAction="BukaSheet2"/>
+    </group>
+
+    <group id="MyGroup666" label="PROJEK 1">
+	<button id="sheet101" label="Skenario" image="skenario" size="normal" onAction="Bukasheet101" />
+	<button id="sheet10" label="Penilaian" image="penilaian" size="normal" onAction="Bukasheet10" />
+	<button id="sheet3" label="Catatan Proses" image="catatan" size="normal" onAction="Bukasheet3" />	
+        <separator  id="Separator5551" />
+	<button id="sheet36" label="Rapor Projek 1" image="proyek1" size="large" onAction="Bukasheet36" />
+    </group>
+
+    <group id="MyGroup6666" label="PROJEK 2">
+	<button id="sheet102" label="Skenario" image="skenario" size="normal" onAction="Bukasheet102" />
+	<button id="sheet12" label="Penilaian" image="penilaian" size="normal" onAction="Bukasheet12" />
+	<button id="sheet14" label="Catatan Proses" image="catatan" size="normal" onAction="Bukasheet14" />	
+        <separator  id="Separator66661" />
+	<button id="sheet41" label="Rapor Projek 2" image="proyek2" size="large" onAction="Bukasheet41" />
+    </group>
+
+    <group id="MyGroup66666" label="PROJEK 3">
+	<button id="sheet103" label="Skenario" image="skenario" size="normal" onAction="Bukasheet103" />
+	<button id="sheet25" label="Penilaian" image="penilaian" size="normal" onAction="Bukasheet25" />
+	<button id="sheet35" label="Catatan Proses" image="catatan" size="normal" onAction="Bukasheet35" />
+        <separator  id="Separator666661" />
+	<button id="sheet43" label="Rapor Projek 3" image="proyek3" size="large" onAction="Bukasheet43" />
+    </group>
+
+    <group id="MyGroup666666" label="RAPOR PROJEK TAHUNAN">
+	<button id="sheet46" label="Rapor 2 Projek" image="proyek22" size="large" onAction="Bukasheet46" />
+        <separator  id="Separator6666661" />
+	<button id="sheet50" label="Rapor 3 Projek" image="Proyek33" size="large" onAction="Bukasheet50" />
+    </group>
+
+    <group id="MyGroup6666666" label="SIMPAN">
+      <button idMso="FileSave" image="edco" label="Simpan Pekerjaan" size="large" onAction="Simpan" />
+    </group>
+</tab>
+
+<tab id="TabNew5" label="Rapor">
+    <group id="MyGroup5" label="FRONT">
+      <button id="Sekolah5" image="edco" label="HOME" size="large" onAction="BukaSheet4" />
+    </group>
+
+    <group id="MyGroup5555" label="PRINT">
+	<button id="Sheet55" imageMso="CreateForm" label="Buku Induk" size="large" onAction="BukaSheet55"/>
+    </group>
+
+    <group id="MyGroup55" label="HASIL">
+	<button id="Sheet49" imageMso="ChartStylesGallery" label="Grafik" size="large" onAction="BukaSheet49"/>
+        <separator  id="Separator441" />	
+	<button id="Sheet52" imageMso="ForwardAsBusinessCard" label="Piagam" size="large" onAction="BukaSheet52"/>
+    </group>
+
+    <group id="MyGroup555" label="RAPOR">
+	<button id="Sheet47" image="rekap2" label="Leger" size="large" onAction="BukaSheet47"/>
+        <separator  id="Separator442" />
+	<button id="Sheet48" imageMso="CreateForm" label="Rapor Tengah Semester" size="large" onAction="BukaSheet48"/>
+        <separator  id="Separator443" />
+	<button id="Sheet34" imageMso="CreateForm" label="Rapor PSAS" size="large" onAction="BukaSheet34"/>
+    </group>
+</tab>
+
+   </tabs>
+	</ribbon>
+
+</customUI>
