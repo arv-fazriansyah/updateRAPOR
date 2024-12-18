@@ -21,13 +21,13 @@
     <tabs>
       <tab idMso="TabHome" visible="true" />
       <tab idMso="TabView" visible="true" />
-      <tab idMso="TabReview" visible="true" />
-      <tab idMso="TabData" visible="true" />
-      <tab idMso="TabAutomate" visible="true" />
-      <tab idMso="TabInsert" visible="true" />
-      <tab idMso="TabPageLayoutExcel" visible="true" />
-      <tab idMso="TabFormulas" visible="true" />
-      <tab idMso="TabDeveloper" visible="true" />
+      <tab idMso="TabReview" visible="false" />
+      <tab idMso="TabData" visible="false" />
+      <tab idMso="TabAutomate" visible="false" />
+      <tab idMso="TabInsert" visible="false" />
+      <tab idMso="TabPageLayoutExcel" visible="false" />
+      <tab idMso="TabFormulas" visible="false" />
+      <tab idMso="TabDeveloper" visible="false" />
   <tab id="TabNew1" label="Beranda">
     <group id="MyGroup1" label="FRONT">
       <button id="Sekolah1" image="edco" label="HOME" size="large" onAction="BukaSheet4" />
